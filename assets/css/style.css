@@ -1,30 +1,33 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
-:root {
-  --primary-color: rgb(17, 86, 102);
-  --primary-color-darker: rgb(9, 48, 56);
-}
-
-* {
-  box-sizing: border-box;
-  outline: 0;
-}
-
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0;
   padding: 0;
   background: var(--primary-color);
   font-family: 'Open sans', sans-serif;
   font-size: 1.3em;
   line-height: 1.5em;
+  width: 100vw;
+  height: 100vh;
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   text-align: center;
   max-width: 640px;
+  height: 520px;
   margin: 50px auto;
   background: #fff;
   padding: 20px;
   border-radius: 10px;
+}
+
+.container h1 {
+  background-color: #eee;
+  padding: 12px 0;
 }
 
 form input, form label, form button {
@@ -69,7 +72,7 @@ button {
   outline: none;
   border: none;
   border-radius: 8px;
-  background: #8de7f9;
+  background: #bdbeff;
   margin-left: 12px;
   margin-right: 12px;
   font-weight: 500;
@@ -77,12 +80,12 @@ button {
 }
 
 button:hover {
-  background: #7bc8d7;
+  background: #a8aafa;
   transition: all 0.4s ease;
 }
 
 button:active {
-  background: #6daebb;
+  background: #9a9cfa;
   transition: all 0.2s ease;
 }
 
